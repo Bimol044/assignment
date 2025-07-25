@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* "Inter" font */
+body {
+    margin: 0;
+    padding: 0;
+}
 
 * {
     margin: 0;
@@ -55,7 +59,6 @@
 .lower-nav .lower-right ul {
     display: flex;
     list-style: none;
-    padding: 0 16px;
 }
 
 .lower-right ul li:first-child {
@@ -241,8 +244,9 @@ li:nth-child(3) a {
     font-size: 22px;
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.5);
-    margin-left: 30px;
+    margin-left: 18px;
     margin-top: 20px;
+    padding-left: 10px;
 }
 
 /* Latest Deals section */
@@ -556,9 +560,13 @@ li:nth-child(3) a {
 
 
     /* Plants style  */
+    .plants {
+        margin: 120px auto;
+    }
+
     .cart-title {
         margin: 0 16px;
-        margin-bottom: 28px;
+        /* margin-bottom: 28px; */
     }
 
     .cart-title h3 {
@@ -570,15 +578,10 @@ li:nth-child(3) a {
     }
 
     /* Cart Style */
-    .cart {
-        width: 171px;
-        height: 340px;
-    }
 
     .plant-carts-container {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
-        column-gap: 28px;
         margin: 0 16px;
     }
 
@@ -590,7 +593,7 @@ li:nth-child(3) a {
     /* lover Plants section style */
     .lover-plants-section {
         flex-direction: column;
-        margin: 100px 16px 18px 16px;
+        margin: 0 16px;
 
     }
 
@@ -630,7 +633,7 @@ li:nth-child(3) a {
 
     /* Latest deal section */
     .deal {
-        margin: 0 16px;
+        padding: 0 16px;
     }
 
     .deal h2 {
@@ -678,13 +681,13 @@ li:nth-child(3) a {
     }
 
     .btn-container button {
-        right: 17px;
+        right: 0px;
     }
 
     /* Footer Section Style */
     .footer-section {
         flex-direction: column;
-        margin: 0 16px;
+        padding: 0 16px;
         width: 100%;
 
     }
@@ -697,5 +700,10 @@ li:nth-child(3) a {
     .footer-nav-items,
     .footer-info-policy {
         margin: 10px 0;
+        padding: 0px;
     }
+}
+
+.hide {
+    display: none;
 }
